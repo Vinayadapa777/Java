@@ -85,6 +85,9 @@ public class Linkedlist {
 	Collections.shuffle(l1);
 	System.out.println("After Shuffleing l1:"+l1);
 	
+	
+	
+	//Specific methods in LinkedList 
 	LinkedList<Object> a = new LinkedList<Object>();
 	a.add("Vihan");
 	a.add("Aksha");
@@ -96,9 +99,10 @@ public class Linkedlist {
 	System.out.println("Getting first element : "+a.getFirst());//Adapa
 	System.out.println("Getting last element : "+a.getLast());//Ashok
 	a.removeFirst();
-	System.out.println("After removing First Element in list :"+a);
+	System.out.println("After removing First Element in list :"+a);//[Vihan, Aksha, Vinay, Ashok]
 	a.removeLast();
-	System.out.println("After removing last Element in list :"+a);
+	System.out.println("After removing last Element in list :"+a);//[Vihan, Aksha, Vinay]
+
 
     }
 
