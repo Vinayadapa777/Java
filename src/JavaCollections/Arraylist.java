@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class Arraylist {
 //1.  Java ArrayList class can contain duplicate elements.
@@ -50,6 +51,8 @@ public class Arraylist {
 	    System.out.print(a + " ");// 7 7.0 Replacing A true
 	}
 	System.out.println();
+	
+	//3.using Iterator method
 	System.out.println("Reading the list using iterator loop.......");
 	Iterator<Object> it = al.iterator();
 	while (it.hasNext()) {
@@ -93,5 +96,17 @@ public class Arraylist {
 	ArrayList<Object> alc = new ArrayList<Object>(Arrays.asList(arr));
 	System.out.println(alc);// [Vinay, Aksha, Vihan]
 
+	al.add("Vinay");
+	al.add("Aksha");
+	al.add("Vihan");
+	ArrayList<String> a2 = new ArrayList<String>();
+	a2.add("Aksha");
+	a2.add("Vihan");
+	al.retainAll(a2);
+	System.out.println("iterating the elements after retaining the elements of a2");
+	Iterator<Object> itr = al.iterator();
+	while (itr.hasNext()) {
+	    System.out.println(itr.next());
+	}
     }
 }
