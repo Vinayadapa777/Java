@@ -103,7 +103,23 @@ public class Linkedlist {
 	a.removeLast();
 	System.out.println("After removing last Element in list :"+a);//[Vihan, Aksha, Vinay]
 
-
+        //When Linked list implemeted By using the Queue Interface
+	//The major difference between LinkedList and Priority Queue ,Linkedlist allow Heterogeneous Data
+	LinkedList<Object> lq=new LinkedList<Object> ();
+	lq.add("Ashok");
+	lq.offer("Vinay");
+	lq.offerFirst(7);
+	lq.offerLast('A');
+	lq.offer("Vihan");
+	System.out.println(lq);//[7, Ashok, Vinay, A, Vihan]
+	System.out.println(lq.element());//7
+	System.out.println(lq.peek());//7
+	System.out.println(lq.peekLast());//Vihan
+	System.out.println(lq.remove());//7(Which return and remove
+	System.out.println(lq.poll());//Ashok
+	System.out.println(lq.pollLast());//Vihan
+	System.out.println(lq);//[ Vinay, A]
+	
     }
 
 }
