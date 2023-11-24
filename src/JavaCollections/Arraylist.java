@@ -14,7 +14,7 @@ public class Arraylist {
 //    because a lot of shifting needs to occur if any element is removed from the array list.
 //5.  We can not create an array list of the primitive types, such as int, float, char, etc. 
 //    It is required to use the required wrapper class in such cases. For
-//6.  Java ArrayList gets initialized by the size. The size is dynamic in the array list,
+//6.  Java ArrayList gets initialized by the size 10. The size is dynamic in the array list,
 //    which varies according to the elements getting added or removed from the list.    
     public static void main(String args[]) {
 	ArrayList<Object> al = new ArrayList<Object>();
@@ -53,7 +53,7 @@ public class Arraylist {
 	
 	//3.using Iterator method
 	System.out.println("Reading the list using iterator loop.......");
-	Iterator<Object> it = al.iterator();
+	Iterator<Object> it =al.iterator();
 	while (it.hasNext()) {
 	    System.out.print(it.next() + " ");
 	}

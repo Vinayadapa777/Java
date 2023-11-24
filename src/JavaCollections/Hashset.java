@@ -84,6 +84,8 @@ public class Hashset {
 	set1.removeAll(set2);
 	System.out.println("Differnce in set1 from set2 : "+set1);//[2, 3, 4]
 	
+	
+	
     }
 
 }

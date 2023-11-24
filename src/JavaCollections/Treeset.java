@@ -9,12 +9,7 @@ public class Treeset {
 //  3.Java TreeSet class doesn't allow null element.
 //  4.Java TreeSet class is non synchronized.
 //  5.Java TreeSet class maintains ascending order.
-//  6.Java TreeSet class contains unique elements only like HashSet.
-//  7.Java TreeSet class access and retrieval times are quite fast.
-//  8.Java TreeSet class doesn't allow null elements.
-//  9.Java TreeSet class is non-synchronized.
-//  10.Java TreeSet class maintains ascending order.
-//  11.The TreeSet can only allow those generic types that are comparable. For example The Comparable interface is being implemented by the StringBuffer class.
+//  6.The TreeSet can only allow those generic types that are comparable. For example The Comparable interface is being implemented by the StringBuffer class.
     public static void main(String[] args) {
 	TreeSet<String> al = new TreeSet<String>();
 	al.add("Ravi");
@@ -33,8 +28,9 @@ public class Treeset {
 	set.add(15);
 	System.out.println();
 	// first and last method return elements accordingly
-	System.out.println("First element :" + set.first() + " & Last Element :" + set.last());// First element :12 &
-											       // Last Element :66
+	System.out.println("First element :" + set.first() + " & Last Element :" + set.last());// First element :12 & // Last Element :66
+	
+	System.out.println(set);
 	// poll will return and remove the element at top
 	System.out.println("Lowest Value: " + set.pollFirst());// 12
 	System.out.println("Highest Value: " + set.pollLast());// 66
