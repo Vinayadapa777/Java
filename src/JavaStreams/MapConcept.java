@@ -26,8 +26,9 @@ public class MapConcept {
 	    System.out.print(v.length() + ",");
 	}
 	// Using Stream
+	System.out.println();
 	System.out.println("using streams getting length of each String");
-	vehicles.stream().map(n -> n.length()).forEach(s -> System.out.println(s));
+	vehicles.stream().map(n -> n.length()).forEach(s -> System.out.print(s+" "));
 
 	List<Integer> num = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 	List<Integer> mutipliedNum = new ArrayList<>();
