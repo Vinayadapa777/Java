@@ -48,8 +48,8 @@ public class FindandMatchMethods {
 	Optional<String> ele = listnum.stream().findAny();
 	System.out.println("FindAny :" + ele.get());// one or //NosuchElement Exception
 
-	// FindAny
-	Optional<String> ele1 = listnum.stream().findAny();
+	// FindFirst
+	Optional<String> ele1 = listnum.stream().findFirst();
 	System.out.println("FindFirst :" + ele1.get());// one or //NosuchElement Exception
 
 	// Combining multiple list
