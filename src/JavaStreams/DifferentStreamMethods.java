@@ -53,6 +53,7 @@ public class DifferentStreamMethods {
 	System.out.println("Printing reduced list :"+reduce.get());
 	
 	//ToArray method
+	//s
 	List<String> stlist1 = Arrays.asList("A", "B", "C", "D", "1", "2", "3");
 	Object arr[]=stlist1.stream().toArray();
 	for(Object t:arr) {
