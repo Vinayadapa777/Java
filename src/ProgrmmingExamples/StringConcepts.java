@@ -65,9 +65,9 @@ public class StringConcepts {
 		    }
 		}
 		if (count == 1) {
-		    System.out.println("Unique character in String :" + name.charAt(i));
+		    System.out.println("count of character  '" + name.charAt(i) + "' = " + count);
 		} else if (count > 1) {
-		    System.out.println("Duplicate character is :" + name.charAt(i) + " repeated " + count + " times");
+		    System.out.println("count of character  '" + name.charAt(i) + "' = " + count);
 		}
 	    }
 	}
@@ -100,7 +100,7 @@ public class StringConcepts {
     public static void vowelsPresent() {
 	List<String> name = Arrays.asList("Sky", "Apple", "Banana", "Carrot");
 	for (String n : name) {
-	    int count =0;
+	    int count = 0;
 	    boolean flag = false;
 	    String fruits = n.toLowerCase();
 	    for (int i = 0; i < fruits.length(); i++) {
@@ -108,17 +108,32 @@ public class StringConcepts {
 		if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 		    flag = true;
 		    count++;
-		} 
+		}
 	    }
-	    if(flag==true) {
-		System.out.println(fruits+": contains Vowels and count of Vowels :"+count);
+	    if (flag == true) {
+		System.out.println(fruits + ": contains Vowels and count of Vowels :" + count);
 	    }
 	}
     }
+
     public static String removinhg(String name) {
-   	return name.replaceAll("[^a-z,0-9]", "");
-   	
-       }
+	return name.replaceAll("[^a-z,0-9]", "");
+
+    }
+
+    public static String spaceRemoval(String name) {
+	StringBuilder output = new StringBuilder();
+	for (int i = 0; i < name.length(); i++) {
+	    if (!Character.isWhitespace(name.charAt(i))) {
+		output.append(name.charAt(i));
+	    }
+	}
+	return output.toString();
+    }
+
+    static boolean ovewls(String name) {
+	return name.toLowerCase().matches(".*[aeiou].*");
+    }
 
     public static void main(String[] args) {
 	String name = "Vinay Adapa";
