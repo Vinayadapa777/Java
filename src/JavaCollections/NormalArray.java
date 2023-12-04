@@ -9,6 +9,7 @@ public class NormalArray {
 	a[2] = 3;
 	a[3] = 4;
 	a[4] = 5;
+	System.out.println(a);//[I@626b2d4a
 	int b[] = { 1, 2, 3, 4, 5, 6, 7 };
 	System.out.println("Printing Array a");
 	for (int i = 0; i < a.length; i++) {
