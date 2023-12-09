@@ -32,7 +32,6 @@ public class SwitchCase {
 	    break;
 	case default:
 	    System.out.println("Invalid number");
-
 	}
     }
 }
