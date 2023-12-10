@@ -134,8 +134,15 @@ public class StringConcepts {
     static boolean ovewls(String name) {
 	return name.toLowerCase().matches(".*[aeiou].*");
     }
+    public static void stringSort(String name) {
+	char ch[]=name.toCharArray();
+	Arrays.sort(ch);
+	ch.toString();
+	System.out.println(ch);
+    }
 
     public static void main(String[] args) {
+	stringSort("zxiabdc");
 	String name = "Vinay Adapa";
 	System.out.println("Character count in the string :" + characterCountInString(name));
 	System.out.println("Reverse String :" + reverseString(name));
