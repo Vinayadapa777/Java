@@ -9,6 +9,10 @@ class A {
     public void Amethod() {
 	System.out.println("class A");
     }
+    public void Amethod1() {
+   	System.out.println("class A1");
+       }
+    
 }
 
 class B extends A {
@@ -37,7 +41,8 @@ public class Inheritance {
 	C.Amethod();
 	C.Bmethod();
 	C.Cmethod();
-
+	
+	
     }
 
 }
