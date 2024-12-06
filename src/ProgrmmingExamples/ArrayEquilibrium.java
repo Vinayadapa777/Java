@@ -4,12 +4,11 @@ public class ArrayEquilibrium {
     public static int equilibriumNumber(int arr[]) {
 	int sum = 0;
 	int leftSum = 0;
-	int n = arr.length;
-	for (int m : arr) {
-	    sum += m;
+	for (int n : arr) {
+	    sum += n;
 	}
-	System.out.println("Total Sum :" + sum);
-	for (int i = 0; i < n; i++) {
+	System.out.println("Total sum of Array : " + sum + "");
+	for (int i = 0; i < arr.length; i++) {
 	    sum -= arr[i];
 	    if (leftSum == sum) {
 		return i;
@@ -17,7 +16,6 @@ public class ArrayEquilibrium {
 	    leftSum += arr[i];
 	}
 	return -1;
-
     }
 
     public static void main(String[] args) {

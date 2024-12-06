@@ -5,11 +5,11 @@ public class ArmStrongNumber {
     public static void armStrongNumber(int limit) {
 	for (int i = 1; i <= limit; i++) {
 	    int sum = 0;
+	    int last = 0;
 	    int digit = 0;
 	    int temp = i;
-	    int last = 0;
 	    while (temp > 0) {
-		temp = temp / 10;
+		temp /= 10;
 		digit++;
 	    }
 	    temp = i;
@@ -19,10 +19,9 @@ public class ArmStrongNumber {
 		temp /= 10;
 	    }
 	    if (sum == i) {
-		System.out.println(i);
+		System.out.print(i + " ");
 	    }
 	}
-
     }
 
     public static void main(String[] args) {

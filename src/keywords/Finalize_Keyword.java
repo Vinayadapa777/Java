@@ -23,6 +23,7 @@ public class Finalize_Keyword {
 	System.gc();
 	// now the finalize method call here
 	// System.out.println(b.hashCode());
+	System.out.println(b);
 	Finalize_Keyword b1 = new Finalize_Keyword();
 	b1.add(10, 20);
 	b1 = null;

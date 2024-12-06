@@ -8,6 +8,7 @@ public class UniqueNumbersInArray {
 
     // Print the unique and repeated/Duplicates values
     public static void uniqueNumbers(int arr[]) {
+	List<Integer> unique=new ArrayList<>();
 	List<Integer> listOfNum = new ArrayList<>();
 	for (int i = 0; i < arr.length; i++) {
 	    if (!listOfNum.contains(arr[i])) {
@@ -20,12 +21,14 @@ public class UniqueNumbersInArray {
 		}
 		if (count == 1) {
 		    System.out.println(arr[i] + " unique Element in Array ");
+		    unique.add(arr[i]);
 		}
 		if (count > 1) {
 		    System.out.println(arr[i] + " repeated " + count + " times");
 		}
 	    }
 	}
+	System.out.println(unique);
     }
 
     public static void main(String[] args) {

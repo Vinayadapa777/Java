@@ -41,6 +41,19 @@ public class StringConcepts {
 	}
 	return reverse;
     }
+    
+    public static String printlast2InEachString(String name) {
+   	String words = "";
+   	String each[] = name.split(" ");
+   	for (String eachname : each) {
+   	    String lasttwoInWord = "";
+   	    for (int i = eachname.length() - 2; i<eachname.length(); i++) {
+   		lasttwoInWord += eachname.charAt(i);
+   	    }
+   	 words += lasttwoInWord + " ";
+   	}
+   	return words;
+       }
 
     public static String reverseeachStringUsingBuilder(String name) {
 	String each[] = name.split(" ");
@@ -147,6 +160,7 @@ public class StringConcepts {
 	System.out.println("Character count in the string :" + characterCountInString(name));
 	System.out.println("Reverse String :" + reverseString(name));
 	System.out.println("Reverse Each String :" + reverseEachString(name));
+	System.out.println("Print last two letters in Each String :" + printlast2InEachString(name));
 	uniqueCharInString(name);
 	System.out.println(reverseStringBuilder(name));
 	String name1 = "Vinay Sai Manikantha Adapa";

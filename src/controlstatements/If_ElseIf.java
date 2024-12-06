@@ -10,7 +10,7 @@ public class If_ElseIf {
 	if (age > 18) {
 		System.out.println("Eligible for Vote ");
 	} else if (age < 18) {
-		System.out.println("Eligible for Vote ");
+		System.out.println("Not Eligible for Vote ");
 	} else if (age < 0) {
 		System.out.println("Not Born");
 	} else {

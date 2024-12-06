@@ -7,7 +7,7 @@ public class FibnocciPro {
 	int b = 1;
 	System.out.print(a + " " + b);
 	int i = 0;
-	while (i < n - 2) {//because previously we have printing 2 values so using -2 to get exact count
+	while (i < n - 2) {// because previously we have printing 2 values so using -2 to get exact count
 	    int c = a + b;
 	    a = b;
 	    b = c;
@@ -26,11 +26,9 @@ public class FibnocciPro {
     }
 
     public static void fibnoccirecc(int n) {
-//	for (int i = 0; i < n; i++) {
-//	    System.out.print(fr(i) + " ");
-//	   
-//	}
-	 System.out.println(fr(6));
+	for (int i = 0; i < n; i++) {
+	    System.out.print(fr(i) + " ");
+	}
     }
 
     public static void main(String[] args) {

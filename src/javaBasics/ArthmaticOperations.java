@@ -12,8 +12,9 @@ public class ArthmaticOperations {
 	System.out.println(num2);
 
 	int num3 = 7;
-	num3++;
-	System.out.println(num3);
+	//num3++;
+	System.out.println(num3++);
+	System.out.println(num3++);
 	
 	
 //	Post And Pre Increment the values
